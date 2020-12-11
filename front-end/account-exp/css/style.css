@@ -1,0 +1,21 @@
+html {
+    /* px 表示 “像素（pixels）”: 基础字号为 10 像素 */
+    font-size: 20px; 
+    /* Google fonts 输出的 CSS */
+    font-family: 'Open Sans', sans-serif; 
+    background-color: #a8d48e;
+}
+h1 {
+    text-align: center;
+}
+p,li{
+    color: red;
+}
+
+.account {
+    text-align: center;
+}
+
+.login_btn,.login_input {
+    width: 200px;
+}
