@@ -27,6 +27,26 @@ function setUserName() {
 myButton.onclick = function() {
     setUserName()
 }
-function Add(num1,num2) {
-    return num1 + num2;
+
+loginBtn = document.getElementById('login_box').getElementsByTagName('div').item(2).querySelector('button')
+loginBtn.onclick = function(){
+    $.ajax({
+            url: "http://127.0.0.1:8080/ping",
+            data: {name: 'jenny'},
+            type: "GET",
+            dataType: "json",
+            success: function(data) {
+                console.log(data.name)
+                alert(data.name)
+                window.location.href = "../html/account.html"
+            },
+            error: function(e) {
+                console.log('error',e)
+            }
+        }
+    )
 }
+
+
+
+

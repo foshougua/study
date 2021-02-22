@@ -10,12 +10,10 @@ h1 {
 }
 p,li{
     color: red;
+	background-color: #A8D48E;
 }
 
-.account {
-    text-align: center;
-}
-
-.login_btn,.login_input {
-    width: 200px;
+.login_input {
+    margin:auto;
+    width: 400px;
 }
