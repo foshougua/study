@@ -1,12 +1,12 @@
 package main
 
 type ChairFactory interface {
-	Set()
+	Set() error
 }
 
 type SofaFactory interface {
 	Filling(t string) error
-	Set()
+	Set() error
 }
 
 type TableFactory interface {
